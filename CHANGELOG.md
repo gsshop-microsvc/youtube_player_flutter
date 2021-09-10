@@ -1,3 +1,6 @@
+## 8.0.1
+* full screen update 
+
 ## 8.0.0
 * Null Safety Release
 * Added `useHybridComposition` flag

@@ -275,14 +275,14 @@ class YoutubePlayerController extends ValueNotifier<YoutubePlayerValue> {
   /// Toggles the player's full screen mode.
   void toggleFullScreenMode() {
     updateValue(value.copyWith(isFullScreen: !value.isFullScreen));
-    if (value.isFullScreen) {
-      SystemChrome.setPreferredOrientations([
-        DeviceOrientation.landscapeLeft,
-        DeviceOrientation.landscapeRight,
-      ]);
-    } else {
-      SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
-    }
+    // if (value.isFullScreen) {
+    //   SystemChrome.setPreferredOrientations([
+    //     DeviceOrientation.landscapeLeft,
+    //     DeviceOrientation.landscapeRight,
+    //   ]);
+    // } else {
+    //   SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
+    // }
   }
 
   /// MetaData for the currently loaded or cued video.
