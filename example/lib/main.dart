@@ -102,7 +102,7 @@ class _MyHomePageState extends State<MyHomePage> {
         _playerState = _controller.value.playerState;
         _videoMetaData = _controller.metadata;
       });
-    }
+    } else if (_isPlayerReady && mounted && _controller.value.isFullScreen) {}
   }
 
   @override
