@@ -1,3 +1,6 @@
+## 8.0.4
+* isScreenChanged add
+
 ## 8.0.3
 * version update
 

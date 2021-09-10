@@ -24,6 +24,7 @@ class YoutubePlayerValue {
     this.buffered = 0.0,
     this.isPlaying = false,
     this.isFullScreen = false,
+    this.isScreenChanged = false,
     this.volume = 100,
     this.playerState = PlayerState.unknown,
     this.playbackRate = PlaybackRate.normal,
@@ -54,6 +55,8 @@ class YoutubePlayerValue {
 
   /// Reports true if video is fullscreen.
   final bool isFullScreen;
+
+  final bool isScreenChanged;
 
   /// The current volume assigned for the player.
   final int volume;
@@ -95,6 +98,7 @@ class YoutubePlayerValue {
     double? buffered,
     bool? isPlaying,
     bool? isFullScreen,
+    bool? isScreenChanged,
     int? volume,
     PlayerState? playerState,
     double? playbackRate,
@@ -112,6 +116,7 @@ class YoutubePlayerValue {
       buffered: buffered ?? this.buffered,
       isPlaying: isPlaying ?? this.isPlaying,
       isFullScreen: isFullScreen ?? this.isFullScreen,
+      isScreenChanged: isScreenChanged ?? this.isScreenChanged,
       volume: volume ?? this.volume,
       playerState: playerState ?? this.playerState,
       playbackRate: playbackRate ?? this.playbackRate,
@@ -272,17 +277,21 @@ class YoutubePlayerController extends ValueNotifier<YoutubePlayerValue> {
   /// Sets the playback speed for the video.
   void setPlaybackRate(double rate) => _callMethod('setPlaybackRate($rate)');
 
+  void setScreenSize() {
+    updateValue(value.copyWith(isScreenChanged: !value.isScreenChanged));
+  }
+
   /// Toggles the player's full screen mode.
   void toggleFullScreenMode() {
     updateValue(value.copyWith(isFullScreen: !value.isFullScreen));
-    // if (value.isFullScreen) {
-    //   SystemChrome.setPreferredOrientations([
-    //     DeviceOrientation.landscapeLeft,
-    //     DeviceOrientation.landscapeRight,
-    //   ]);
-    // } else {
-    //   SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
-    // }
+    if (value.isFullScreen) {
+      SystemChrome.setPreferredOrientations([
+        DeviceOrientation.landscapeLeft,
+        DeviceOrientation.landscapeRight,
+      ]);
+    } else {
+      SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
+    }
   }
 
   /// MetaData for the currently loaded or cued video.
@@ -298,6 +307,7 @@ class YoutubePlayerController extends ValueNotifier<YoutubePlayerValue> {
         value.copyWith(
           isReady: false,
           isFullScreen: false,
+          isScreenChanged: false,
           isControlsVisible: false,
           playerState: PlayerState.unknown,
           hasPlayed: false,
