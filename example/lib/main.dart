@@ -102,7 +102,17 @@ class _MyHomePageState extends State<MyHomePage> {
         _playerState = _controller.value.playerState;
         _videoMetaData = _controller.metadata;
       });
-    } else if (_isPlayerReady && mounted && _controller.value.isFullScreen) {}
+    }
+
+    if (_isPlayerReady && mounted && _controller.value.isScreenOpen) {
+      _controller.updateValue(_controller.value.copyWith(isScreenOpen: false));
+
+      _controller.toggleFullScreenMode();
+    } else if (_isPlayerReady && mounted && _controller.value.isScreenClose) {
+      _controller.updateValue(_controller.value.copyWith(isScreenClose: false));
+
+      _controller.toggleFullScreenMode();
+    }
   }
 
   @override
@@ -242,6 +252,8 @@ class _MyHomePageState extends State<MyHomePage> {
                       _loadCueButton('LOAD'),
                       const SizedBox(width: 10.0),
                       _loadCueButton('CUE'),
+                      const SizedBox(width: 10.0),
+                      _loadToggleButton('TOGGLE'),
                     ],
                   ),
                   _space,
@@ -414,6 +426,33 @@ class _MyHomePageState extends State<MyHomePage> {
                 } else {
                   _showSnackBar('Source can\'t be empty!');
                 }
+              }
+            : null,
+        disabledColor: Colors.grey,
+        disabledTextColor: Colors.black,
+        child: Padding(
+          padding: const EdgeInsets.symmetric(vertical: 14.0),
+          child: Text(
+            action,
+            style: const TextStyle(
+              fontSize: 18.0,
+              color: Colors.white,
+              fontWeight: FontWeight.w300,
+            ),
+            textAlign: TextAlign.center,
+          ),
+        ),
+      ),
+    );
+  }
+
+  Widget _loadToggleButton(String action) {
+    return Expanded(
+      child: MaterialButton(
+        color: Colors.blueAccent,
+        onPressed: _isPlayerReady
+            ? () {
+                _controller.toggleFullScreenMode();
               }
             : null,
         disabledColor: Colors.grey,

@@ -25,6 +25,8 @@ class YoutubePlayerValue {
     this.isPlaying = false,
     this.isFullScreen = false,
     this.isScreenChanged = false,
+    this.isScreenOpen = false,
+    this.isScreenClose = false,
     this.volume = 100,
     this.playerState = PlayerState.unknown,
     this.playbackRate = PlaybackRate.normal,
@@ -56,7 +58,14 @@ class YoutubePlayerValue {
   /// Reports true if video is fullscreen.
   final bool isFullScreen;
 
+  //
   final bool isScreenChanged;
+
+  //
+  final bool isScreenOpen;
+
+  //
+  final bool isScreenClose;
 
   /// The current volume assigned for the player.
   final int volume;
@@ -99,6 +108,8 @@ class YoutubePlayerValue {
     bool? isPlaying,
     bool? isFullScreen,
     bool? isScreenChanged,
+    bool? isScreenOpen,
+    bool? isScreenClose,
     int? volume,
     PlayerState? playerState,
     double? playbackRate,
@@ -117,6 +128,8 @@ class YoutubePlayerValue {
       isPlaying: isPlaying ?? this.isPlaying,
       isFullScreen: isFullScreen ?? this.isFullScreen,
       isScreenChanged: isScreenChanged ?? this.isScreenChanged,
+      isScreenOpen: isScreenOpen ?? this.isScreenOpen,
+      isScreenClose: isScreenClose ?? this.isScreenClose,
       volume: volume ?? this.volume,
       playerState: playerState ?? this.playerState,
       playbackRate: playbackRate ?? this.playbackRate,
@@ -277,8 +290,16 @@ class YoutubePlayerController extends ValueNotifier<YoutubePlayerValue> {
   /// Sets the playback speed for the video.
   void setPlaybackRate(double rate) => _callMethod('setPlaybackRate($rate)');
 
-  void setScreenSize() {
+  void setScreenChanged() {
     updateValue(value.copyWith(isScreenChanged: !value.isScreenChanged));
+  }
+
+  void setScreenOpen() {
+    updateValue(value.copyWith(isScreenOpen: !value.isScreenOpen));
+  }
+
+  void setScreenClose() {
+    updateValue(value.copyWith(isScreenClose: !value.isScreenClose));
   }
 
   /// Toggles the player's full screen mode.
@@ -308,6 +329,8 @@ class YoutubePlayerController extends ValueNotifier<YoutubePlayerValue> {
           isReady: false,
           isFullScreen: false,
           isScreenChanged: false,
+          isScreenOpen: false,
+          isScreenClose: false,
           isControlsVisible: false,
           playerState: PlayerState.unknown,
           hasPlayed: false,

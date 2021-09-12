@@ -1,4 +1,4 @@
-## 8.0.4
+## 8.0.7
 * isScreenChanged add
 
 ## 8.0.3
