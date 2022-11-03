@@ -101,8 +101,8 @@ packages:
     dependency: "direct main"
     description:
       path: "."
-      ref: gsfresh
-      resolved-ref: db763bd525176b4d2e4362280af27329fc583cb5
+      ref: gsshop
+      resolved-ref: "2f8fa22db439650d8dbcbd5dad72c9044163c907"
       url: "https://github.com/betterafter/flutter_inappwebview.git"
     source: git
     version: "6.0.0-beta.12"

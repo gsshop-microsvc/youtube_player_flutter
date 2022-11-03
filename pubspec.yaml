@@ -14,7 +14,7 @@ dependencies:
   flutter_inappwebview:
     git:
       url: https://github.com/betterafter/flutter_inappwebview.git
-      ref: gsfresh
+      ref: gsshop
 
 dev_dependencies:
   flutter_test:
