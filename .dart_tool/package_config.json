@@ -87,25 +87,13 @@
     },
     {
       "name": "flutter_inappwebview",
-      "rootUri": "file:///Users/gsr/flutter/.pub-cache/git/flutter_inappwebview-2f8fa22db439650d8dbcbd5dad72c9044163c907/",
-      "packageUri": "lib/",
-      "languageVersion": "2.14"
-    },
-    {
-      "name": "flutter_inappwebview_internal_annotations",
-      "rootUri": "file:///Users/gsr/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_inappwebview_internal_annotations-1.1.0",
+      "rootUri": "file:///Users/gsr/flutter/.pub-cache/git/flutter_inappwebview-e99be0bff03f42f290161a343443f563461dedb4/",
       "packageUri": "lib/",
       "languageVersion": "2.14"
     },
     {
       "name": "flutter_test",
       "rootUri": "file:///Users/gsr/flutter/packages/flutter_test",
-      "packageUri": "lib/",
-      "languageVersion": "2.17"
-    },
-    {
-      "name": "flutter_web_plugins",
-      "rootUri": "file:///Users/gsr/flutter/packages/flutter_web_plugins",
       "packageUri": "lib/",
       "languageVersion": "2.17"
     },
@@ -350,7 +338,7 @@
       "languageVersion": "2.12"
     }
   ],
-  "generated": "2022-11-03T07:20:03.534953Z",
+  "generated": "2022-12-01T05:04:39.347702Z",
   "generator": "pub",
   "generatorVersion": "2.18.2"
 }

@@ -1,7 +1,7 @@
 flutter_inappwebview
 2.14
-file:///Users/gsr/flutter/.pub-cache/git/flutter_inappwebview-2f8fa22db439650d8dbcbd5dad72c9044163c907/
-file:///Users/gsr/flutter/.pub-cache/git/flutter_inappwebview-2f8fa22db439650d8dbcbd5dad72c9044163c907/lib/
+file:///Users/gsr/flutter/.pub-cache/git/flutter_inappwebview-e99be0bff03f42f290161a343443f563461dedb4/
+file:///Users/gsr/flutter/.pub-cache/git/flutter_inappwebview-e99be0bff03f42f290161a343443f563461dedb4/lib/
 _fe_analyzer_shared
 2.17
 file:///Users/gsr/flutter/.pub-cache/hosted/pub.dartlang.org/_fe_analyzer_shared-47.0.0/
@@ -54,10 +54,6 @@ file
 2.12
 file:///Users/gsr/flutter/.pub-cache/hosted/pub.dartlang.org/file-6.1.4/
 file:///Users/gsr/flutter/.pub-cache/hosted/pub.dartlang.org/file-6.1.4/lib/
-flutter_inappwebview_internal_annotations
-2.14
-file:///Users/gsr/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_inappwebview_internal_annotations-1.1.0/
-file:///Users/gsr/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_inappwebview_internal_annotations-1.1.0/lib/
 frontend_server_client
 2.12
 file:///Users/gsr/flutter/.pub-cache/hosted/pub.dartlang.org/frontend_server_client-2.1.3/
@@ -222,10 +218,6 @@ flutter_test
 2.17
 file:///Users/gsr/flutter/packages/flutter_test/
 file:///Users/gsr/flutter/packages/flutter_test/lib/
-flutter_web_plugins
-2.17
-file:///Users/gsr/flutter/packages/flutter_web_plugins/
-file:///Users/gsr/flutter/packages/flutter_web_plugins/lib/
 youtube_player_flutter
 2.12
 file:///Users/gsr/youtube_player_flutter/
