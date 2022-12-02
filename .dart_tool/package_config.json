@@ -87,7 +87,7 @@
     },
     {
       "name": "flutter_inappwebview",
-      "rootUri": "file:///Users/gsr/flutter/.pub-cache/git/flutter_inappwebview-4b80691055d82e7707d80a272b70e4fd38c2377b/",
+      "rootUri": "file:///Users/gsr/flutter/.pub-cache/git/flutter_inappwebview-bc441dd7709afc0117dc357a35e08d1973b6b9a6/",
       "packageUri": "lib/",
       "languageVersion": "2.14"
     },
@@ -105,7 +105,7 @@
     },
     {
       "name": "glob",
-      "rootUri": "file:///Users/gsr/flutter/.pub-cache/hosted/pub.dartlang.org/glob-2.1.0",
+      "rootUri": "file:///Users/gsr/flutter/.pub-cache/hosted/pub.dartlang.org/glob-2.1.1",
       "packageUri": "lib/",
       "languageVersion": "2.15"
     },
@@ -129,7 +129,7 @@
     },
     {
       "name": "js",
-      "rootUri": "file:///Users/gsr/flutter/.pub-cache/hosted/pub.dartlang.org/js-0.6.4",
+      "rootUri": "file:///Users/gsr/flutter/.pub-cache/hosted/pub.dartlang.org/js-0.6.5",
       "packageUri": "lib/",
       "languageVersion": "2.16"
     },
@@ -159,7 +159,7 @@
     },
     {
       "name": "mime",
-      "rootUri": "file:///Users/gsr/flutter/.pub-cache/hosted/pub.dartlang.org/mime-1.0.2",
+      "rootUri": "file:///Users/gsr/flutter/.pub-cache/hosted/pub.dartlang.org/mime-1.0.3",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -195,9 +195,9 @@
     },
     {
       "name": "pub_semver",
-      "rootUri": "file:///Users/gsr/flutter/.pub-cache/hosted/pub.dartlang.org/pub_semver-2.1.2",
+      "rootUri": "file:///Users/gsr/flutter/.pub-cache/hosted/pub.dartlang.org/pub_semver-2.1.3",
       "packageUri": "lib/",
-      "languageVersion": "2.12"
+      "languageVersion": "2.17"
     },
     {
       "name": "shelf",
@@ -219,9 +219,9 @@
     },
     {
       "name": "shelf_web_socket",
-      "rootUri": "file:///Users/gsr/flutter/.pub-cache/hosted/pub.dartlang.org/shelf_web_socket-1.0.2",
+      "rootUri": "file:///Users/gsr/flutter/.pub-cache/hosted/pub.dartlang.org/shelf_web_socket-1.0.3",
       "packageUri": "lib/",
-      "languageVersion": "2.14"
+      "languageVersion": "2.17"
     },
     {
       "name": "sky_engine",
@@ -338,7 +338,7 @@
       "languageVersion": "2.12"
     }
   ],
-  "generated": "2022-12-02T08:08:51.525697Z",
+  "generated": "2022-12-02T08:29:39.942426Z",
   "generator": "pub",
   "generatorVersion": "2.18.2"
 }
