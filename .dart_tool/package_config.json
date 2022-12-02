@@ -87,7 +87,7 @@
     },
     {
       "name": "flutter_inappwebview",
-      "rootUri": "file:///Users/gsr/flutter/.pub-cache/git/flutter_inappwebview-e99be0bff03f42f290161a343443f563461dedb4/",
+      "rootUri": "file:///Users/gsr/flutter/.pub-cache/git/flutter_inappwebview-4b80691055d82e7707d80a272b70e4fd38c2377b/",
       "packageUri": "lib/",
       "languageVersion": "2.14"
     },
@@ -338,7 +338,7 @@
       "languageVersion": "2.12"
     }
   ],
-  "generated": "2022-12-01T05:04:39.347702Z",
+  "generated": "2022-12-02T08:08:51.525697Z",
   "generator": "pub",
   "generatorVersion": "2.18.2"
 }

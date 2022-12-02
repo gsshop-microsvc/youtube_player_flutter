@@ -102,7 +102,7 @@ packages:
     description:
       path: "."
       ref: "gsshop_v5.6.0+2"
-      resolved-ref: e99be0bff03f42f290161a343443f563461dedb4
+      resolved-ref: "4b80691055d82e7707d80a272b70e4fd38c2377b"
       url: "https://github.com/betterafter/flutter_inappwebview.git"
     source: git
     version: "5.6.0+2"
