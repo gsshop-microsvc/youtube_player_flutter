@@ -3,6 +3,7 @@ description: Flutter plugin for playing or streaming inline YouTube videos using
 version: 8.0.4
 repository: https://github.com/nixstory/youtube_player_flutter
 homepage: https://github.com/nixstory/youtube_player_flutter
+publish_to: "none" #common_repo만 없었는데, 어디 올려놓지는 않은 것 같아 추가.
 
 environment:
   sdk: '>=2.12.0 <3.0.0'
@@ -13,7 +14,7 @@ dependencies:
     sdk: flutter
   flutter_inappwebview:
     git:
-      url: https://github.com/gsshop-microsvc/flutter_inappwebview
+      url: https://github.com/betterafter/flutter_inappwebview.git #최신버전의 inappwebview - 테스트후 문제 없을시 gsshop-microsvc 레포지토리에 생성예정
       ref: gsshop_v5.6.0+2
 
 dev_dependencies:
