@@ -171,6 +171,9 @@ class _ProgressBarState extends State<ProgressBar> {
       child: Container(
         color: Colors.transparent,
         constraints: const BoxConstraints.expand(height: 7.0 * 2),
+        padding: EdgeInsets.only(
+          top: 3,
+        ),
         child: CustomPaint(
           painter: _ProgressBarPainter(
             progressWidth: 2.0,
