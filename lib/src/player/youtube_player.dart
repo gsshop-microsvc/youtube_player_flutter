@@ -370,13 +370,18 @@ class _YoutubePlayerState extends State<YoutubePlayer> {
                                 const SizedBox(width: 14.0),
                                 CurrentPosition(),
                                 const SizedBox(width: 8.0),
-                                ProgressBar(
-                                  isExpanded: true,
-                                  colors: widget.progressColors,
+                                Padding(
+                                  padding: EdgeInsets.only(top:2),
+                                  child: ProgressBar(
+                                    isExpanded: true,
+                                    colors: widget.progressColors,
+                                  ),
                                 ),
-                                RemainingDuration(),
+                                VolumeMutedButton(
+                                  muteFlag: controller.flags.mute,
+                                ),
                                 // const PlaybackSpeedButton(),
-                                FullScreenButton(),
+                                // FullScreenButton(),
                               ],
                         ),
                       ),
