@@ -15,7 +15,7 @@ dependencies:
   flutter_inappwebview:
     git:
       url: https://github.com/betterafter/flutter_inappwebview.git #최신버전의 inappwebview - 테스트후 문제 없을시 gsshop-microsvc 레포지토리에 생성예정
-      ref: gsshop_v5.8.0
+      ref: gsshop_v5.6.0+2
 
 dev_dependencies:
   flutter_test:
